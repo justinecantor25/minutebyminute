@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -5,20 +10,19 @@ body {
     font-family: "Helvetica", sans-serif;
 }
 #site-header {
+    font-family: "Helvetica", serif;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
     padding: 1.5vh 3vw;
-    background-color: #ffffff;
-    z-index: 1000;
 }
-.site-logo {
-    height: 6vh;
-    width: auto;
+#main-nav {
+    position: static; 
+    z-index: 2000;
 }
 #main-nav ul {
     list-style: none;
@@ -30,11 +34,15 @@ body {
 #main-nav ul li a {
     text-decoration: none;
     color: #262626;
-    font-size: 1rem;
+    font-size: 1.2vw;
     font-weight: 500;
 }
 #main-nav ul li a:hover {
     color: #e7c000;
+}
+.site-logo {
+    height: 6vh;
+    width: auto;
 }
 .credits-page {
     max-width: 1200px;

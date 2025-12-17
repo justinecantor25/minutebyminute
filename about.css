@@ -1,3 +1,8 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 body {
     margin: 0;
     padding: 0;
@@ -86,6 +91,17 @@ body {
 .column:nth-of-type(2) p:first-child,
 .column:nth-of-type(3) p:first-child {
     margin-top: 1.5rem;
+}
+.column a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.column a:hover {
+    color: #f2c94c;
+}
+.column a:visited {
+    color: #67c0dd;
 }
 #site-footer {
     position: relative; 
