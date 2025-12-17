@@ -191,3 +191,37 @@ body {
         transform: none;
     }
 }
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.6rem;
+    cursor: pointer;
+    color: #111;
+}
+@media (max-width: 768px) {
+
+    #menu-toggle {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 2rem;
+    }
+    #main-nav {
+        display: none;
+        position: absolute;
+        top: 4.5rem;
+        right: 2rem;
+        background: #fff;
+        padding: 1.5rem 2rem;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+        z-index: 999;
+    }
+    #main-nav ul {
+        flex-direction: column;
+        gap: 1.2rem;
+    }
+    #main-nav.active {
+        display: block;
+    }
+}
